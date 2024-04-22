@@ -72,7 +72,7 @@ print(paste("Percentage of tracks with explicit content:", explicit_percentage, 
 # Converting is_explicit column to numeric
 cleaned_songs_dataset$is_explicit_numeric <- as.numeric(cleaned_songs_dataset$is_explicit)
 
-# Checking  correlation between explicit content and popularity
+# Checking  the correlation between explicit content and popularity
 correlation <- cor(cleaned_songs_dataset$is_explicit_numeric, cleaned_songs_dataset$popularity, use = "complete.obs")
 
 print(correlation)
@@ -95,7 +95,7 @@ print(explicit_plot)
 
 ## Release Date Analysis
 ### Description
-Found the distribution of release dates for the top 50 tracks and 
+Found the distribution of release dates for the top 50 tracks.
 ## Findings
 Years with the highest released songs are 2023,2022,2013 and 2016.
 
